@@ -65,6 +65,7 @@ export default function App() {
                   // Remember to replace "1" below with repository ID: {`repository-likes-${repository.id}`}
                   testID={`repository-likes-${repository.id}`}
                 >
+                  {/* se o repository.likes for maior que 1 ele vai retornar true e vai mostrar "s" */}
                   {repository.likes} curtida{repository.likes > 1 && "s"}
                 </Text>
               </View>
